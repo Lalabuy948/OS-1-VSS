@@ -1,12 +1,10 @@
-# OS-1-VSS
-
 Another way of using virtual env via docker
 
 # Intro / Philosophy
 
 The idea of using docker and not using [virtualbox](https://www.virtualbox.org/) or [parallels](https://www.parallels.com/products/desktop/) is very simple.
 First, **cross platform** (Mac, Linux, Win). Second, **low-weight**.
-Third, **super fast** coz you don't need gui or interface for studying `bash`.
+Third, **super fast** coz you don't need gui interface.
 
 # [Docker](https://docs.docker.com/install)
 
@@ -28,7 +26,7 @@ Then run that command to start docker:
 
 You launched your first docker container - in other words you launched linux.
 
-If you would like to work with files using your lovely IDE or code editor do next steps:
+If you would like to work with files using your favorite IDE or code editor do next steps:
 
 `docker run -it -v /Users/USERNAME/DIRECTORY:/tmp vcatechnology/linux-mint`
 
@@ -45,14 +43,3 @@ Stop it:
 Finally how it looks like:
 
 ![desktop](screens/for-os.png)
-
-# Notes
-
-For the whole course I was missing just one command:
-
-`passwd` or smth like that. When you start your docker container you can easily
-update + upgrade Linus distro and install missing command via apt.   
-
-`apt update && apt upgrade`
-
-`apt install whois`
